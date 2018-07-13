@@ -1,0 +1,30 @@
+.land-dash__container {
+  width: 76rem;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+  grid-row-gap: 13px; }
+
+.card {
+  width: 100%;
+  border: 1px solid #C1C8DA;
+  padding: 15px; }
+  .card iframe {
+    border: none; }
+  .card__title {
+    text-align: center;
+    margin-top: 20px;
+    line-height: 26px; }
+    .card__title a {
+      color: #5E87FF;
+      text-decoration: none;
+      transition: all .5s ease; }
+      .card__title a:hover {
+        color: #6DA5FF; }
+  .card__date {
+    text-align: center;
+    font-size: 13px;
+    color: #A0A0A0; }

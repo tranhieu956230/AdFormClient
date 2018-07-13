@@ -1,0 +1,181 @@
+.land-header {
+    padding-bottom: 40px;
+    background-image: url('../../images/yeah.png');
+    background-position: center bottom;
+    background-repeat: repeat;
+    &__container {
+        max-width: 945px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: visible;
+    }
+    &__head {
+        display: flex;
+    }
+}
+
+.banner {
+    padding: 0 .5rem;
+    flex-basis: 50%;
+    color: #525d7d;
+    font-size: 30px;
+    margin-top: 20px;
+    &__redirect {
+        text-decoration: none;
+        transition: all .5s ease;
+        display: flex;
+        align-items: center;
+    }
+    &__description {
+        color: #7a88b0;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    &__icon {
+        margin-right: 9px;
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+.contact {
+    flex-basis: 50%;
+    padding: 0 .5rem;
+    &__container {
+        display: flex;
+        margin-top: 35px;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    &__link {
+        color: #4E7CC7;
+        text-decoration: none;
+        transition: all .5s ease;
+        background-color: transparent;
+    }
+    &__item {
+        width: 48px;
+        height: 48px;
+        border: 2px solid #7a88b0;
+        border-radius: 50%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-image: url('../../images/c-shade.png');
+        position: relative;
+        &--blog {
+            margin-right: 4px;
+            &::before {
+                position: absolute;
+                content: 'Blog';
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #7A88B0;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+        }
+        &--facebook::before {
+            position: absolute;
+            content: '';
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-image: url('../../images/f.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+.search-bar {
+    border: 2px solid #7a88b0;
+    position: relative;
+    height: 58px;
+    margin-top: 41px;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url('../../images/search-shade.png');
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 10px;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    &__input {
+        border: none;
+        background: transparent;
+        height: 100%;
+        width: 100%;
+        padding: 0 50px 0 20px;
+        font-size: 19px;
+        transition: all .1s ease;
+        color: #686868;
+        border-radius: 3px;
+        &:focus {
+            outline: none;
+            background-color: #fff;
+            border-color: #007acc;
+            color: #363636;
+        }
+
+        &::placeholder{
+            color: #7a88b0;
+        }
+    }
+    & button {
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        background-color: transparent;
+        background-image: url('../../images/search.png');
+        top: 12px;
+        right: 8px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        &:active {
+            transform: translateY(1px);
+        }
+    }
+}
+
+.navigation {
+    display: flex;
+    margin-top: 30px;
+    &__options{
+         flex-basis: 25%;
+         position: relative;
+         &::before{
+             content: '';
+             position: absolute;
+             width: 19px;
+             height: 19px;
+             background-image: url('../../images/drop.png');
+             top: 4px;
+             left: 0px;
+             pointer-events: none;
+         }
+         
+    }
+
+    & select{
+        width: 100%;
+        background-color: transparent;
+        font-size: 16px;
+        color: #7a88b0;
+        border: none;
+        outline: none;
+        padding-left: 25px;
+        cursor: pointer;
+
+        -webkit-appearance: none;
+    }
+}

@@ -1,0 +1,47 @@
+.land-dash {
+    &__container {
+        width: 76rem;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        grid-row-gap: 16px;
+    }
+}
+
+.card{
+
+    max-width: 393px;
+    border: 1px solid #C1C8DA;
+    padding: 15px;
+    & iframe{
+       border: none;
+
+    }
+
+    &__title{
+        text-align: center;
+        margin-top: 20px;
+        line-height: 26px;
+        font-size: 19px;
+        font-weight: 700;
+        & a{
+            color: #5E87FF;
+            text-decoration: none;
+            transition: all .5s ease;
+
+            &:hover{
+                color: #6DA5FF;
+
+            }
+        }
+    }
+
+    &__date{
+        text-align: center;
+        font-size: 13px;
+        color: #A0A0A0;
+    }
+}
