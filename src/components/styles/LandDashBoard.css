@@ -13,7 +13,21 @@
   border: 1px solid #C1C8DA;
   padding: 15px; }
   .card iframe {
-    border: none; }
+    border: none;
+    display: block; }
+  .card__thumb {
+    width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.1);
+    transition: all .3s; }
+    .card__thumb:hover {
+      box-shadow: 0 0 12px 5px rgba(0, 0, 0, 0.1); }
+  .card__link {
+    display: block; }
+  .card__image {
+    display: block;
+    width: 100%;
+    height: auto; }
   .card__title {
     text-align: center;
     margin-top: 20px;
